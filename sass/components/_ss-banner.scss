@@ -1,0 +1,12 @@
+.banner {
+    &-item {
+        background-attachment: fixed;
+        min-height: 850px;
+        display: flex;
+        align-items: center;
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

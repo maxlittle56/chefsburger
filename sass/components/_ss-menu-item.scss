@@ -1,0 +1,49 @@
+.menu-list {
+    ul {
+        list-style: none;
+    }
+    .menu-item {
+        display: flex;
+        flex-wrap: wrap;
+        h5 {
+            font-family: $font-poppins;
+            @include font-size(1.125rem);
+            color: $black;
+            line-height: 1.125rem;
+            font-weight: 600;
+            flex: 0 1 auto;
+        }
+
+        small {
+            @include font-size(0.625rem);
+            line-height: 0.625rem;
+            color: $gray-500;
+        }
+        &__price {
+            h6 {
+                @include font-size(1rem);
+                font-family: $font-poppins;
+                line-height: 1.625rem;
+                font-weight: 600;
+                color: $yellow;
+                flex: 0 1 auto;
+            }
+        }
+        &__desc {
+            font-family: $font-poppins;
+            @include font-size(0.75rem);
+            font-weight: 600;
+            color: $gray-700;
+        }
+    }
+}
+.dotted-seprator {
+    margin-bottom: calc((1.625rem - 1rem) / 2);
+    background-image: radial-gradient(circle closest-side, rgba($black, 0.2) 99%, transparent 1%);
+    background-position: bottom;
+    background-size: 0.3125rem 0.1875rem;
+    background-repeat: repeat-x;
+    flex: 1 1 auto;
+    margin-left: 0.1875rem;
+    margin-right: 0.3125rem;
+}

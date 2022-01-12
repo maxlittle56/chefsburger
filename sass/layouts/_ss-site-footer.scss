@@ -1,0 +1,158 @@
+.site-footer {
+    background-color: $black-300;
+    font-weight: 600;
+    padding: 2rem 0;
+    @include media-breakpoint-up(sm) {
+        padding: 3rem 0;
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 5rem 0;
+    }
+    @include media-breakpoint-up(xxl) {
+        padding: 7.5rem 0 6.25rem;
+    }
+}
+.footer {
+    &-main {
+        margin-bottom: 1.25rem;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 1.875rem;
+        }
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 3.125rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    }
+    &-info {
+        @include font-size(0.75rem);
+        color: $gray-600;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+            text-align: right;
+            line-height: 1.8;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 0.625rem;
+        }
+    }
+    &-nav {
+        color: $white;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            margin-bottom: 2.1875rem;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 1.25rem;
+        }
+        ul {
+            @include media-breakpoint-only(md) {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0 -1.25rem;
+            }
+        }
+        li {
+            margin-bottom: 0.75rem;
+            @include media-breakpoint-only(md) {
+                padding: 0 1.25rem;
+            }
+        }
+        a {
+            color: inherit;
+            text-transform: uppercase;
+            @include font-size(0.875rem);
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+    &-social {
+        text-align: center;
+        h6 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            letter-spacing: 5px;
+            @include font-size(0.75rem);
+            color: $gray-600;
+            text-transform: uppercase;
+        }
+        .social-icon {
+            margin: 1.25rem 0;
+            @include media-breakpoint-up(md) {
+                margin: 2rem 0;
+            }
+            @include media-breakpoint-up(xl) {
+                margin: 3rem 0;
+            }
+            h6 {
+                margin-bottom: 1rem;
+            }
+        }
+        li {
+            display: inline-block;
+            margin: 0 0.75rem;
+            @include media-breakpoint-up(md) {
+                margin: 0 1.125rem;
+            }
+            @include media-breakpoint-up(xl) {
+                margin: 0 1.5625rem;
+            }
+            a {
+                color: $light-gray-100;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    &-address {
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+        a {
+            color: $white;
+            display: block;
+            text-transform: uppercase;
+            word-wrap: break-word;
+            letter-spacing: 5px;
+            @include font-size(0.625rem);
+            margin: 0 0 0.5rem;
+            &:hover {
+                color: $primary;
+            }
+        }
+        .phone {
+            color: $primary;
+            &:hover {
+                color: $yellow-dim;
+            }
+        }
+        .location {
+            letter-spacing: 0;
+            line-height: 1.8;
+            margin-top: 0.9375rem;
+            @include media-breakpoint-up(md) {
+                margin-top: 1.25rem;
+            }
+            @include media-breakpoint-up(xl) {
+                margin-top: 2rem;
+            }
+        }
+    }
+    &-bottom {
+        @include font-size(0.625rem);
+        color: $gray-700;
+        text-align: center;
+        a {
+            color: $gray-600;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

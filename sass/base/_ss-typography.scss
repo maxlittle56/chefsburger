@@ -1,0 +1,28 @@
+// Typography
+//color
+$two-col-bg: #efefef;
+
+.two-col {
+    background-color: $two-col-bg;
+    .overlap-block {
+        @include media-breakpoint-up(xxl) {
+            margin-left: -9rem;
+        }
+    }
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 145px;
+    //     left: 36%;
+    //     width: 250px;
+    //     height: 1px;
+    //     background-color: $yellow-dim;
+    // }
+}
+
+.text-block {
+    font-family: $font-open-sans;
+    @include font-size(0.875rem);
+    line-height: 2;
+    color: $gray-900;
+}

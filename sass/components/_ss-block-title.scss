@@ -1,0 +1,15 @@
+.block-title {
+    span {
+        @include font-size(3.5rem);
+        color: $yellow-dim;
+        line-height: 3rem;
+        font-family: cursive;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-family: $font-poppins;
+        font-weight: 600;
+        color: $black;
+        margin-top: 0.3125rem;
+    }
+}

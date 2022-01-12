@@ -1,0 +1,48 @@
+.image-card {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    min-height: 350px;
+    padding: 30px 15px;
+    @include media-breakpoint-up(lg) {
+        min-height: 826px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba($black, 0.4);
+        z-index: -1;
+    }
+
+    .text-wrap {
+        font-family: $font-poppins;
+        @include font-size(0.75rem);
+        color: $white;
+        text-align: center;
+
+        h4 {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        h5 {
+            @include font-size(1.125rem);
+            font-weight: 400;
+        }
+    }
+
+    .price {
+        h5 {
+            font-family: $font-poppins;
+            color: $yellow;
+        }
+    }
+}

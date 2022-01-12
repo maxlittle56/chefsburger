@@ -1,0 +1,38 @@
+
+
+
+$gray-300:#666666;
+
+.nav-tag{
+    background-color: $white;
+    h2{
+        text-transform: uppercase;
+        color: $gray-900;
+        font-weight: 400;
+        span{
+            display: block;
+            font-size: 0.875rem;
+            color: $gray-300;
+            letter-spacing: 4px;
+            font-weight: 500;
+        }
+    }
+    li{
+        a{
+            text-transform: uppercase;
+            color: $gray-900;
+            padding: 0;
+            @include font-size(0.75rem);
+            line-height: 1;
+            font-weight: 600;
+            letter-spacing: 3px;
+            font-family: $font-poppins;
+            &.active{
+                color: $yellow;
+            }
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+
+$gray-100: #efefef;
+
+body{
+    background-color: $gray-100;
+}
+.error {
+    &-page {
+        &.container{
+            max-width: 970px;
+        }
+        .block-title {
+            @include media-breakpoint-down(md){
+                text-align: center;
+                padding-top: 3.125rem;
+            }
+            span {
+                font-family: $font-poppins;
+                color: $yellow;
+                font-weight: 600;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
+            h2{
+                color: $gray-900;
+            }
+        }
+    }
+    &-content{
+        @include media-breakpoint-down(md){
+            text-align: center;
+        }
+        span{
+            @include font-size(0.875rem);
+            font-weight: 600;
+            line-height: 2.2;
+            font-family: $font-poppins;
+        }
+        p{
+            @include font-size(0.875rem);
+            line-height: 1.85;
+        }
+        a{
+            color: $yellow;
+            &:hover{
+                color: $gray-900;
+            }
+        }
+    }
+}

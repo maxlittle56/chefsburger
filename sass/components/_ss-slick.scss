@@ -1,0 +1,49 @@
+.slick{
+    &-slider{
+        padding: 0 20px;
+    }
+    &-arrow{
+        border: 0;
+        background-color: transparent;
+        font-size: 0;
+        color: $gray-900;
+        opacity: 0.75;
+        position: absolute;
+        bottom: 0;
+        @include media-breakpoint-up(lg){
+            top: 0;
+            bottom: auto;
+        }
+        &:hover, &:active, &:focus{
+            opacity: 1;
+        }
+        &::before{
+            display: inline-block;
+            line-height: 1;
+            font-family: 'FontAwesome';
+            @include font-size(2.5rem);
+        }
+    }
+    &-prev{
+    //    left: calc(50% - 15px);
+        right: 50%;
+        @include media-breakpoint-up(lg){
+            left: 0;
+            right: auto;
+        }
+        &::before{
+            content: '\f104';
+        }
+    }
+    &-next{
+        left: 50%;
+        @include media-breakpoint-up(lg){
+            right: 0;
+            left: auto;
+
+        }
+        &::before{
+            content: '\f105';
+        }
+    }
+}

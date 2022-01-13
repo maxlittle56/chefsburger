@@ -117,5 +117,22 @@ $( document ).ready(function() {
             $('.cart-btn').click(function(){
                 $(this).next(".cart-panel").slideToggle();
             });
+
+			//product slider
+			$('.product-slider-for').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				fade: true,
+				asNavFor: '.product-slider-nav'
+			});
+			$('.product-slider-nav').slick({
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				asNavFor: '.product-slider-for',
+				vertical: true,
+				arrows: false,
+				focusOnSelect: true
+			});
 });
 

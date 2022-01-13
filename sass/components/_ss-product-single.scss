@@ -1,0 +1,126 @@
+$gray-100: #f7f7f7;
+$gray-200: #555;
+
+
+.product {
+  &-slider {
+    .col {
+      &-nav,
+      &-for {
+          padding: 0 1.25rem;
+      }
+      &-nav {
+        flex: 0 0 18%;
+        max-width: 18%;
+      }
+      &-for {
+        flex: 0 0 82%;
+        max-width: 82%;
+      }
+    }
+    &-for{
+        img{
+            width: 100%;
+        }
+    }
+  }
+  &-nav {
+    margin-bottom: 0.625rem;
+    picture {
+      width: 5.375rem;
+      height: 5.375rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &-content {
+    span {
+      font-weight: 600;
+      font-family: $font-poppins;
+      display: block;
+      &.price {
+        color: $yellow;
+        @include font-size(1.875rem);
+        line-height: 1;
+      }
+      &.title {
+        @include font-size(0.875rem);
+      }
+    }
+    p {
+      @include font-size(0.875rem);
+      line-height: 2.2;
+    }
+  }
+  &-cart {
+    display: inline-flex;
+    input {
+      height: 56px;
+      border: 2px solid $gray-400;
+      padding: 15px;
+      margin-right: 15px;
+      &:focus-visible {
+        outline: 0;
+      }
+    }
+  }
+}
+
+.feedback {
+    padding: 2.25rem 0 4.875rem 0;
+    .nav {
+        border-color: transparent;
+        &-link {
+            background-color: $gray-100;
+            margin-right: 2px;
+            border-radius: 0;
+            @include font-size(0.625rem);
+            font-family: $font-poppins;
+            text-transform: uppercase;
+            color: $gray-900;
+            letter-spacing: 1px;
+            border: 0;
+            &.active{
+                border-color: transparent;
+                color: $gray-200;
+            }
+            &:hover{
+                background-color: $white;
+            }
+        }
+    }
+    .tab{
+        &-content{
+            background-color: $white;
+            padding: 3.75rem 5.75rem 4.6875rem 4.5rem;
+            p{
+                @include font-size(0.875rem);
+                font-weight: 700;
+                font-family: $font-montsearrt;
+                text-transform: uppercase;
+                margin-bottom: 2.75rem;
+            }
+        }
+    }
+}
+.form {
+    &-group{
+        label{
+            @include font-size(0.75rem);
+            line-height: 1;
+            font-weight: 700;
+            font-family: $font-montsearrt;
+            text-transform: uppercase;
+            color: $black;
+            margin: 0 0 0.75rem;
+        }
+    }
+    &-control{
+        height: 174px!important;
+        border: 2px solid $gray-400;
+        border-radius: 0;
+    }
+}

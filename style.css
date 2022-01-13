@@ -13334,6 +13334,138 @@ iframe {
   transform: rotate(45deg);
 }
 
+.product-slider .col-nav, .product-slider .col-for {
+  padding: 0 1.25rem;
+}
+
+.product-slider .col-nav {
+  flex: 0 0 18%;
+  max-width: 18%;
+}
+
+.product-slider .col-for {
+  flex: 0 0 82%;
+  max-width: 82%;
+}
+
+.product-slider-for img {
+  width: 100%;
+}
+
+.product-nav {
+  margin-bottom: 0.625rem;
+}
+
+.product-nav picture {
+  width: 5.375rem;
+  height: 5.375rem;
+}
+
+.product-nav picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-content span {
+  font-weight: 600;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  display: block;
+}
+
+.product-content span.price {
+  color: #cc9933;
+  font-size: 1.875rem;
+  line-height: 1;
+}
+
+@media (max-width: 1200px) {
+  .product-content span.price {
+    font-size: calc(1.3125rem + 0.75vw) ;
+  }
+}
+
+.product-content span.title {
+  font-size: 0.875rem;
+}
+
+.product-content p {
+  font-size: 0.875rem;
+  line-height: 2.2;
+}
+
+.product-cart {
+  display: inline-flex;
+}
+
+.product-cart input {
+  height: 56px;
+  border: 2px solid #dfe1dc;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+.product-cart input:focus-visible {
+  outline: 0;
+}
+
+.feedback {
+  padding: 2.25rem 0 4.875rem 0;
+}
+
+.feedback .nav {
+  border-color: transparent;
+}
+
+.feedback .nav-link {
+  background-color: #f7f7f7;
+  margin-right: 2px;
+  border-radius: 0;
+  font-size: 0.625rem;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+.feedback .nav-link.active {
+  border-color: transparent;
+  color: #555;
+}
+
+.feedback .nav-link:hover {
+  background-color: #fff;
+}
+
+.feedback .tab-content {
+  background-color: #fff;
+  padding: 3.75rem 5.75rem 4.6875rem 4.5rem;
+}
+
+.feedback .tab-content p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 2.75rem;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 0 0.75rem;
+}
+
+.form-control {
+  height: 174px !important;
+  border: 2px solid #dfe1dc;
+  border-radius: 0;
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -13629,7 +13761,7 @@ iframe {
   position: relative;
   font-size: 1rem;
   font-family: "Playfair Display", Helvetica, Arial, sans-serif;
-  color: #fefefe;
+  color: #f7f7f7;
   margin-bottom: 1.25rem;
 }
 

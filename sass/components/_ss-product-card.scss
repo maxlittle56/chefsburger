@@ -1,16 +1,12 @@
 .product-list{
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
-    padding-top: 40px;
-    margin-top: -3px;
     margin-left: -3px;
     padding-bottom: 3px;
 }
 
 .product-card{
     position: relative;
-    width: 33.33%;
     height: 340px;
     min-width: 300px;
     overflow: hidden;

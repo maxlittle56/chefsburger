@@ -29,11 +29,13 @@
         text-align: center;
 
         h4 {
+            color: $white;
             text-transform: uppercase;
             font-weight: 600;
         }
 
         h5 {
+            color: $white;
             @include font-size(1.125rem);
             font-weight: 400;
         }
@@ -43,6 +45,29 @@
         h5 {
             font-family: $font-poppins;
             color: $yellow;
+        }
+    }
+    h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-bottom: 0.625rem;
+        font-family: $font-poppins;
+        color: $white;
+    }
+    .address {
+        font-family: $font-poppins;
+        @include font-size(0.75rem);
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-align: center;
+        a {
+            display: block;
+            color: inherit;
+            margin: 20px 0;
+            &:hover {
+                color: $primary;
+            }
         }
     }
 }

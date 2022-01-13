@@ -1,8 +1,5 @@
-.slick{
-    &-slider{
-        padding: 0 20px;
-    }
-    &-arrow{
+.slick {
+    &-arrow {
         border: 0;
         background-color: transparent;
         font-size: 0;
@@ -10,40 +7,59 @@
         opacity: 0.75;
         position: absolute;
         bottom: 0;
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             top: 0;
             bottom: auto;
         }
-        &:hover, &:active, &:focus{
+        &:hover,
+        &:active,
+        &:focus {
             opacity: 1;
         }
-        &::before{
+        &::before {
             display: inline-block;
             line-height: 1;
-            font-family: 'FontAwesome';
+            font-family: "FontAwesome";
             @include font-size(2.5rem);
         }
     }
-    &-prev{
-    //    left: calc(50% - 15px);
+    &-prev {
+        //    left: calc(50% - 15px);
         right: 50%;
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             left: 0;
             right: auto;
         }
-        &::before{
-            content: '\f104';
+        &::before {
+            content: "\f104";
         }
     }
-    &-next{
+    &-next {
         left: 50%;
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             right: 0;
             left: auto;
-
         }
-        &::before{
-            content: '\f105';
+        &::before {
+            content: "\f105";
+        }
+    }
+    &-dots {
+        list-style: none;
+        padding-left: 0;
+        li {
+            display: inline-block;
+            text-indent: -9999px;
+            border: 0;
+            background-color: red;
+            width: 15px;
+            height: 1px;
+            cursor: pointer;
+            transition: all 0.2s;
+            &.slick-active {
+                background-color: $primary;
+                width: 2.1875rem;
+            }
         }
     }
 }

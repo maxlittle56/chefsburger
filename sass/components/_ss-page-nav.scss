@@ -1,0 +1,52 @@
+$black-500: #1b1b1b;
+
+.page-nav {
+    height: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+
+    a {
+        position: relative;
+        color: $black-500;
+        @include font-size(2.25rem);
+        font-family: $font-poppins;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 1.5rem;
+        @include media-breakpoint-up(lg) {
+            padding: 1.5rem 2rem;
+            min-width: 140px;
+        }
+        &:hover {
+            &::before {
+                transform: translateX(-7px) rotate(225deg);
+            }
+            &::after {
+                transform: translateX(7px) rotate(45deg);
+            }
+        }
+        &::before,
+        &::after {
+            content: "\f105";
+            position: absolute;
+            font-family: "FontAwesome";
+            line-height: 1;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+        &::before {
+            top: 0;
+            left: 0;
+            transform: rotate(225deg);
+        }
+        &::after {
+            bottom: 0;
+            right: 0;
+            transform: rotate(45deg);
+        }
+    }
+}

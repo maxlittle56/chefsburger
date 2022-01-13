@@ -1,15 +1,17 @@
 .block-title {
     span {
+        display: block;
         @include font-size(3.5rem);
         color: $yellow-dim;
-        line-height: 3rem;
+        line-height: 1.2;
         font-family: cursive;
+        font-weight: 500;
+        text-transform: none;
     }
     h2 {
         text-transform: uppercase;
         font-family: $font-poppins;
         font-weight: 600;
-        color: $black;
         margin-top: 0.3125rem;
     }
 }

@@ -1,23 +1,45 @@
-
-
 .testimonial {
-    &.container{
-        max-width: 1080px;
+    &.container {
+        max-width: 60rem;
+    }
+    &-slider {
+        &.slick-slider {
+            padding: 0 0 2.5rem;
+            @include media-breakpoint-up(lg) {
+                padding: 0 1.5625rem;
+            }
+        }
+        .slick {
+            &-arrow {
+                @include media-breakpoint-up(lg) {
+                    top: 0.9375rem;
+                }
+            }
+            &-dots {
+                display: none !important;
+            }
+        }
     }
     &-item {
         text-align: center;
-        q{
-            @include font-size(1.5rem);
-            font-family: $font-playfair;
-            line-height: 1.2;
+        font-family: $font-playfair;
+        line-height: 1.2;
+        @include font-size(1.125rem);
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.25rem);
         }
-        span{
-            font-family: $font-playfair; 
+        @include media-breakpoint-up(xxl) {
+            @include font-size(1.5rem);
+        }
+
+        span {
+            font-family: $font-playfair;
             @include font-size(4.4375rem);
             line-height: 0.42;
             display: block;
         }
-        strong{
+        strong {
             font-style: normal;
             font-weight: 600;
             @include font-size(0.75rem);

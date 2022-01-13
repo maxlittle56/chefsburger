@@ -25,8 +25,8 @@ $font-poppins: "Poppins", Helvetica, Arial, sans-serif;
 // Color system
 
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
+$gray-100: #fefefe;
+$gray-200: #efefef;
 $gray-300: #807f7f;
 $gray-400: #dfe1dc;
 $gray-500: #cccccc;
@@ -39,8 +39,11 @@ $black: #000 !default;
 $black-100: #050505;
 $black-200: #1a1c20;
 $black-300: #0b0d0f;
+$black-400: #16191e;
+$black-500: #1c1f23;
 
 $light-gray-100: #b6b7b7;
+$light-gray-200: #b3b2b2;
 
 
 $yellow-dim: #999966;
@@ -336,7 +339,7 @@ $headings-margin-bottom: $spacer * 0.5 !default;
 $headings-font-family: $font-poppins;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
-$headings-color: null !default;
+$headings-color: $gray-900;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;

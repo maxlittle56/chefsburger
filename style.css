@@ -13820,6 +13820,158 @@ body {
   color: #333333;
 }
 
+/*colors */
+.cart-header h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.25;
+}
+
+@media (max-width: 1200px) {
+  .cart-header h2 {
+    font-size: calc(1.35rem + 1.2vw) ;
+  }
+}
+
+.cart-table {
+  width: 100%;
+}
+
+.cart-table thead {
+  text-transform: uppercase;
+  background-color: #e6e5e5;
+}
+
+.cart-table thead th {
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: 90px;
+}
+
+.cart-item {
+  background-color: #fff;
+}
+
+.cart-item .product-remove {
+  padding: 30px 25px;
+}
+
+.cart-item .product-remove a {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  line-height: 1.8;
+  font-size: 0.875rem;
+  background-color: #f99;
+  border-radius: 100%;
+}
+
+.cart-item .product-remove a::before {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 49%;
+  width: 2px;
+  height: 16px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.cart-item .product-remove a::after {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 49%;
+  width: 2px;
+  height: 16px;
+  background-color: #fff;
+  transform: rotate(135deg);
+}
+
+.cart-item .product-thumbnail {
+  padding: 30px 0;
+}
+
+.cart-item .product-thumbnail img {
+  width: 66px;
+}
+
+.cart-item .product-name {
+  padding: 30px 25px;
+}
+
+.cart-item .product-name a {
+  color: #000;
+  font-weight: 700;
+}
+
+.cart-item .product-price {
+  padding: 30px 35px 30px 15px;
+  text-align: end;
+}
+
+.cart-item .product-price span {
+  font-size: 0.875rem;
+}
+
+.cart-item .product-quantity {
+  padding: 30px 35px 30px 15px;
+}
+
+.cart-item .product-quantity input {
+  width: 120px;
+  height: 55px;
+}
+
+.cart-item .product-total {
+  padding: 30px 35px 30px 15px;
+}
+
+.cart-item .product-total span {
+  font-size: 1.125rem;
+}
+
+.prdct .remove {
+  padding: 30px 25px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  line-height: 1.8;
+  font-size: 0.875rem;
+  background-color: #f99;
+  border-radius: 100%;
+}
+
+.prdct .remove::before {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 49%;
+  width: 2px;
+  height: 16px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.prdct .remove::after {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 49%;
+  width: 2px;
+  height: 16px;
+  background-color: #fff;
+  transform: rotate(135deg);
+}
+
+.shop-section {
+  background-color: #efefef;
+}
+
 .site-footer {
   background-color: #0b0d0f;
   font-weight: 600;

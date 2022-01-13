@@ -1,0 +1,131 @@
+/*colors */
+$table-head: #e6e5e5;
+$product-remove: #f99;
+
+.cart {
+    &-header {
+        h2 {
+            font-weight: 600;
+            @include font-size(2.25rem);
+            line-height: 2.25;
+        }
+    }
+    &-table {
+        width: 100%;
+        thead {
+            text-transform: uppercase;
+            background-color: $table-head;
+            th {
+                @include font-size(0.875rem);
+                font-weight: 700;
+                height: 90px;
+            }
+        }
+    }
+    &-item {
+        background-color: $white;
+        .product {
+            &-remove {
+                padding: 30px 25px;
+                a {
+                    color: $white;
+                    display: inline-block;
+                    position: relative;
+                    width: 28px;
+                    height: 28px;
+                    line-height: 1.8;
+                    @include font-size(0.875rem);
+                    background-color: $product-remove;
+                    border-radius: 100%;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 22%;
+                        left: 49%;
+                        width: 2px;
+                        height: 16px;
+                        background-color: $white;
+                        transform: rotate(45deg);
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 22%;
+                        left: 49%;
+                        width: 2px;
+                        height: 16px;
+                        background-color: $white;
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+            &-thumbnail {
+                padding: 30px 0;
+                img {
+                    width: 66px;
+                }
+            }
+            &-name {
+                padding: 30px 25px;
+                a {
+                    color: $black;
+                    font-weight: 700;
+                }
+            }
+            &-price {
+                padding: 30px 35px 30px 15px;
+                text-align: end;
+                span {
+                    @include font-size(0.875rem);
+                }
+            }
+            &-quantity {
+                padding: 30px 35px 30px 15px;
+                input {
+                    width: 120px;
+                    height: 55px;
+                }
+            }
+            &-total {
+                padding: 30px 35px 30px 15px;
+                span {
+                    @include font-size(1.125rem);
+                }
+            }
+        }
+    }
+}
+.prdct {
+    .remove {
+        padding: 30px 25px;
+        color: $white;
+        display: inline-block;
+        position: relative;
+        width: 28px;
+        height: 28px;
+        line-height: 1.8;
+        @include font-size(0.875rem);
+        background-color: $product-remove;
+        border-radius: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 22%;
+            left: 49%;
+            width: 2px;
+            height: 16px;
+            background-color: $white;
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 22%;
+            left: 49%;
+            width: 2px;
+            height: 16px;
+            background-color: $white;
+            transform: rotate(135deg);
+        }
+    }
+}

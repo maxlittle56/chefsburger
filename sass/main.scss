@@ -72,8 +72,6 @@
 @import "components/ss-double-column";
 @import "components/ss-page-nav";
 
-
-
 // Header
 @import "layouts/ss-site-header";
 
@@ -84,6 +82,8 @@
 // Pages
 @import "pages/ss-homepage";
 @import "pages/ss-error-page";
+@import "pages/ss-cart-page";
+@import "pages/ss-shop";
 
 // Footer
 @import "layouts/ss-site-footer";

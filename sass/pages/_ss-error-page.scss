@@ -1,16 +1,10 @@
-
-$gray-100: #efefef;
-
-body{
-    background-color: $gray-100;
-}
 .error {
     &-page {
-        &.container{
+        &.container {
             max-width: 970px;
         }
         .block-title {
-            @include media-breakpoint-down(md){
+            @include media-breakpoint-down(md) {
                 text-align: center;
                 padding-top: 3.125rem;
             }
@@ -18,31 +12,39 @@ body{
                 font-family: $font-poppins;
                 color: $yellow;
                 font-weight: 600;
-                letter-spacing: 5px;
                 text-transform: uppercase;
+                @include media-breakpoint-up(sm) {
+                    letter-spacing: 1px;
+                }
+                @include media-breakpoint-up(lg) {
+                    letter-spacing: 3px;
+                }
+                @include media-breakpoint-up(xxl) {
+                    letter-spacing: 5px;
+                }
             }
-            h2{
+            h2 {
                 color: $gray-900;
             }
         }
     }
-    &-content{
-        @include media-breakpoint-down(md){
+    &-content {
+        @include media-breakpoint-down(md) {
             text-align: center;
         }
-        span{
+        span {
             @include font-size(0.875rem);
             font-weight: 600;
             line-height: 2.2;
             font-family: $font-poppins;
         }
-        p{
+        p {
             @include font-size(0.875rem);
             line-height: 1.85;
         }
-        a{
+        a {
             color: $yellow;
-            &:hover{
+            &:hover {
                 color: $gray-900;
             }
         }

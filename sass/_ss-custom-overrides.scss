@@ -41,9 +41,21 @@ $black-200: #1a1c20;
 $black-300: #0b0d0f;
 $black-400: #16191e;
 $black-500: #1c1f23;
+$black-600: #1a1d22;
 
 $light-gray-100: #b6b7b7;
 $light-gray-200: #b3b2b2;
+$light-gray-300: #f7f7f7;
+$light-gray-400: #ebe9eb;
+$light-gray-500: #fafafa;
+$light-gray-600: #dedede;
+$light-gray-700: #d9d9d9;
+$light-gray-800: #edefed;
+$light-gray-900: #e6e5e5;
+
+$gray-50: #555;
+$gray-51: #ddd;
+$light-pink: #f99;
 
 
 $yellow-dim: #999966;
@@ -211,7 +223,7 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg: $white !default;
+$body-bg: $gray-200;
 $body-color: $gray-900 !default;
 
 // Links

@@ -4,31 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Error page</title>
 </head>
 <body>
-    <div class="breadcrumb-section">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">404 Error</li>
-                </ol><!-- /.breadcrumb -->
-            </nav>
-        </div><!-- /.container -->
-    </div><!-- /.breadcrumb-section -->
-    <section class="error-page container pt-6 pb-9">
+    <nav aria-label="breadcrumb" class="container pt-lg-3 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">404 Error</li>
+        </ol><!-- /.breadcrumb -->
+    </nav>
+    <section class="error-page container pb-xxl-9 py-lg-5 pb-lg-7 py-sm-3 pb-sm-4 py-2 pb-3">
         <div class="row align-items-center">
             <div class="col-lg-6 col-sm-12">
                 <picture class="error-img text-center">
                     <source srcset="assets/images/error-img.webp" type="image/webp">
                     <source srcset="assets/images/error-img.png" type="image/png">
                     <img src="assets/images/error-img.png" alt="Error image" loading="lazy">
-                </picture>
+                </picture><!-- /.error-img -->
             </div>
             <div class="col-lg-6 col-sm-12">
                 <div class="block-title pb-1">
@@ -38,9 +36,14 @@
                 <div class="error-content">
                     <span>The page cannot be found.</span>
                     <p>Lets get you back on track. Maybe you were looking for something in <a href="#">our menu</a> or wanted to <a href="#">say hello.</a></p>
-                </div>
+                </div><!-- /.error-content -->
             </div>
         </div>
-    </section>
+    </section><!-- /.error-page -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="vendors/object-fit/ofi.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

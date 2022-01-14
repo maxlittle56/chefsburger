@@ -7,14 +7,16 @@
 
     &.sticky {
         background-color: $black;
-        box-shadow: 0 1.25rem 1.875rem rgba($primary, 0.1);
+        box-shadow: 0 1.25rem 1.875rem rgba($white, 0.1);
 
         .navbar {
             padding: 0.75rem 0;
         }
         .header-right {
             .cart {
-                top: 10px;
+                @include media-breakpoint-down(md) {
+                    top: 10px;
+                }
             }
         }
     }
@@ -159,13 +161,14 @@
                     .btn {
                         @include font-size(0.6875rem);
                         color: $white;
-                        padding: 0.625rem;
+                        padding: 0.525rem;
                         min-width: auto;
+                        width: 47%;
                         &-secondary {
                             border: 2px solid transparent;
                         }
-                        &-tertiary {
-                            margin-right: 0.625rem;
+                        &-primary {
+                            padding: 0.6rem;
                         }
                     }
                 }

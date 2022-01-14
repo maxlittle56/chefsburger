@@ -28,7 +28,7 @@
         background-color: $yellow;
         text-align: center;
         padding: 6px 0;
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(md) {
             position: static;
             margin: 0 auto;
         }
@@ -110,5 +110,66 @@
             /* Firefox 18- */
             color: $gray-600;
         }
+    }
+}
+.testimonial {
+    &.container {
+        @include media-breakpoint-up(xl) {
+            max-width: 60rem;
+        }
+    }
+    &-slider {
+        &.slick-slider {
+            padding: 0 0 2.5rem;
+            @include media-breakpoint-up(lg) {
+                padding: 0 1.5625rem;
+            }
+        }
+        .slick {
+            &-arrow {
+                @include media-breakpoint-up(lg) {
+                    top: 0.9375rem;
+                }
+            }
+            &-dots {
+                display: none !important;
+            }
+        }
+    }
+    &-item {
+        text-align: center;
+        font-family: $font-playfair;
+        line-height: 1.2;
+        @include font-size(1.125rem);
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.25rem);
+        }
+        @include media-breakpoint-up(xxl) {
+            @include font-size(1.5rem);
+        }
+
+        span {
+            font-family: $font-playfair;
+            @include font-size(4.4375rem);
+            line-height: 0.42;
+            display: block;
+        }
+        strong {
+            font-style: normal;
+            font-weight: 600;
+            @include font-size(0.75rem);
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: $font-poppins;
+            display: block;
+        }
+    }
+}
+
+.menu-category {
+    .nav-tag {
+        margin-top: -3.125rem;
     }
 }

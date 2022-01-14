@@ -7,11 +7,17 @@
         flex-wrap: wrap;
         h5 {
             font-family: $font-poppins;
-            @include font-size(1.125rem);
             color: $black;
             line-height: 1.125rem;
             font-weight: 600;
+            @include font-size(0.875rem);
             flex: 0 1 auto;
+            @include media-breakpoint-up(sm) {
+                @include font-size(1rem);
+            }
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.125rem);
+            }
         }
 
         small {
@@ -21,12 +27,18 @@
         }
         &__price {
             h6 {
-                @include font-size(1rem);
                 font-family: $font-poppins;
                 line-height: 1.625rem;
                 font-weight: 600;
                 color: $yellow;
                 flex: 0 1 auto;
+                @include font-size(0.75rem);
+                @include media-breakpoint-up(sm) {
+                    @include font-size(0.875rem);
+                }
+                @include media-breakpoint-up(lg) {
+                    @include font-size(1rem);
+                }
             }
         }
         &__desc {

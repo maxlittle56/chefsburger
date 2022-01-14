@@ -5,176 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Cart|Burger</title>
 </head>
 
 <body>
-    <div class="cart-section">
-        <div class="breadcrumb-section">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">cart</li>
-                    </ol><!-- /.breadcrumb -->
-                </nav>
-            </div><!-- /.container -->
-        </div><!-- /.breadcrumb-section -->
-
-        <div class="cart-block">
-            <div class="container">
-                <div class="cart-header">
-                    <h2>cart</h2>
-                </div><!-- /.cart-header-->
-                <form class="cart-form" action="">
-                    <table class="cart-table">
-                        <thead>
-                            <tr>
-                                <th class="product-name">product</th>
-                                <th class="product-name">price</th>
-                                <th class="product-name">Quantity</th>
-                                <th class="product-name">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="cart-item">
-                                <td class="product-remove">
-                                    <a href="" class="remove"></a>
-                                </td>
-                                <td class="product-thumbnail">
-                                    <a href="">
-                                        <picture>
-                                            <source srcset="assets/images/cart-img.webp" type="image/webp">
-                                            <source srcset="assets/images/cart-img.jpg" type="image/jpg">
-                                            <img src="assets/images/cart-img.jpg" height="66px" width="66px"
-                                                loading="lazy">
-                                        </picture>
-                                    </a>
-                                </td>
-                                <td class="product-name">
-                                    <a href="">Apple cider sauce and pork loin chops</a>
-                                </td>
-                                <td class="product-price">
-                                    <span>$15.90</span>
-                                </td>
-                                <td class="product-quantity">
-                                    <div class="quantity">
-                                        <input type="number" class="input-text qty text" value="1">
-                                    </div>
-                                </td>
-                                <td class="product-total">
-                                    <span>$15.90</span>
-                                </td>
-                            </tr>
-                            <tr class="cart-item">
-                                <td class="product-remove">
-                                    <a href="" class="remove"></a>
-                                </td>
-                                <td class="product-thumbnail">
-                                    <a href="">
-                                        <picture>
-                                            <source srcset="assets/images/cart-img.webp" type="image/webp">
-                                            <source srcset="assets/images/cart-img.jpg" type="image/jpg">
-                                            <img src="assets/images/cart-img.jpg" height="66px" width="66px"
-                                                loading="lazy">
-                                        </picture>
-                                    </a>
-                                </td>
-                                <td class="product-name">
-                                    <a href="">Apple cider sauce and pork loin chops</a>
-                                </td>
-                                <td class="product-price">
-                                    <span>$15.90</span>
-                                </td>
-                                <td class="product-quantity">
-                                    <div class="quantity">
-                                        <input type="number" class="input-text qty text" value="1">
-                                    </div>
-                                </td>
-                                <td class="product-total">
-                                    <span>$15.90</span>
-                                </td>
-                            </tr>
-                            <!-- <tr>
-                                <td colspan="6" class="actions">
-                                    <div class="coupon">
-                                        <input type="text" name="coupon_code" class="input-text" id="coupon_code"
-                                            value="" placeholder="Coupon code">
-                                        <input type="submit" class="button" name="apply_coupon" value="Apply coupon">
-                                    </div>
-                                    <div class="update-cart">
-                                        <a href="#" class="btn btn-primary">Update Cart</a>
-                                    </div>
-                                </td>
-                            </tr> -->
-                        </tbody>
-
-                    </table>
-
-                </form>
+    <nav aria-label="breadcrumb" class="container pt-lg-3 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">404 Error</li>
+        </ol><!-- /.breadcrumb -->
+    </nav>
+    <article class="cart-pg container pb-xxl-9 py-lg-5 pb-lg-7 py-sm-3 pb-sm-4 py-2 pb-3">
+        <header class="cart-header">
+            <h2>Cart</h2>
+        </header><!-- /.cart-header-->
+        <form class="woocommerce-cart-form">
+            <div class="table-responsive">
+            <table class="table cart-table table-hover">
+                <thead>
+                    <tr>
+                        <th class="product-remove">&nbsp;</th>
+                        <th class="product-thumbnail">&nbsp;</th>
+                        <th class="product-name">Product</th>
+                        <th class="product-price">Price</th>
+                        <th class="product-quantity">Quantity</th>
+                        <th class="product-subtotal">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-item">
+                        <td class="product-remove">
+                            <a href="#" class="remove"></a>
+                        </td>
+                        <td class="product-thumbnail">
+                            <a href="#">
+                                <img class="img-responsive" width="72" height="72" loading="lazy" src="assets/images/cart-img.jpg" alt="cart img">
+                            </a>
+                        </td>
+                        <td class="product-name" data-title="Product">
+                            <a href="#">Apple cider sauce and pork loin chops</a>
+                        </td>
+                        <td class="product-price" data-title="Price">
+                            <span>$15.90</span>
+                        </td>
+                        <td class="product-quantity" data-title="Quantity">
+                            <div class="quantity">
+                                <input type="number" class="input-text qty text" value="1">
+                            </div>
+                        </td>
+                        <td class="product-subtotal" data-title="Total">
+                            <span>$15.90</span>
+                        </td>
+                    </tr><!-- /.cart-item-->
+                    <tr class="cart-item">
+                        <td class="product-remove">
+                            <a href="#" class="remove"></a>
+                        </td>
+                        <td class="product-thumbnail">
+                            <a href="#">
+                                <img class="img-responsive" width="72" height="72" loading="lazy"  src="assets/images/cart-img.jpg" alt="cart img">
+                            </a>
+                        </td>
+                        <td class="product-name" data-title="Product">
+                            <a href="#">Apple cider sauce and pork loin chops</a>
+                        </td>
+                        <td class="product-price" data-title="Price">
+                            <span>$15.90</span>
+                        </td>
+                        <td class="product-quantity" data-title="Quantity">
+                            <div class="quantity">
+                                <input type="number" class="input-text qty text" value="1">
+                            </div>
+                        </td>
+                        <td class="product-subtotal" data-title="Total">
+                            <span>$15.90</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="actions">
+                            <div class="coupon">
+                                <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code">
+                                <input type="submit" class="button" name="apply_coupon" value="Apply coupon">
+                            </div>
+                            <div class="update-cart">
+                                <a href="#" class="btn">Update Cart</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             </div>
-        </div>
-
-    </div>
-    <!-- <div class="container prdct">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th></th>
-                    <th scope="col">product</th>
-                    <th scope="col">price</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">
-                        <a href="" class="remove"></a>
-                    </th>
-                    <td>
-                        <a href="">
-                            <picture class="cart-img.">
-                                <source srcset="assets/images/cart-img.webp" type="image/webp">
-                                <source srcset="assets/images/cart-img.jpg" type="image/jpg">
-                                <img src="assets/images/cart-img.jpg" height="66px" width="66px" loading="lazy">
-                            </picture>
-                        </a>
-                    </td>
-                    <td><a href="#">Apple cider sauce and pork loin chops</a></td>
-                    <td><span>$15.90</span></td>
-                    <td>
-                        <div class="quantity">
-                            <input type="number" class="input-text qty text" value="1">
-                        </div>
-                    </td>
-                    <td><span>$15.90</span></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
-    </div> -->
-
-
-
+        </form><!-- /.woocommerce-cart-form -->
+        <div class="cart-collaterals ">
+            <div class="cart-totals calculated-shipping">
+                <h2>Cart totals</h2>
+                <table class="shop-table shop-table-responsive">
+                    <tbody>
+                        <tr class="cart-subtotal">
+                            <th>Subtotal</th>
+                            <td data-title="Subtotal">
+                                <span class="woocommerce-Price-amount amount">$15.90</span>
+                            </td>
+                        </tr><!-- /.cart-subtotal -->
+                        <tr class="order-total">
+                            <th>Total</th>
+                            <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>15.90</span></strong> </td>
+                        </tr><!-- /.order-total -->
+                    </tbody>
+                </table><!-- /.shop-table-->
+                <div class="proceed-to-checkout">
+                    <a href="#" class="btn">Proceed to checkout</a>
+                </div><!-- /.proceed-to-checkout-->
+            </div><!-- /.cart-totals -->
+        </div><!-- /.cart-collaterals -->
+    </article>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="vendors/object-fit/ofi.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

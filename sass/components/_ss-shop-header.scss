@@ -8,17 +8,16 @@
 
     &-title {
         margin-bottom: 1.8rem;
+        text-transform: uppercase;
+        @include font-size(0.6875rem);
+        font-weight: 600;
+        color: $gray-300;
+        font-family: $font-poppins;
         h2 {
             @include font-size(2.25rem);
             font-weight: 600;
-            line-height: 2.25rem;
-        }
-        p {
-            text-transform: uppercase;
-            @include font-size(0.6875rem);
-            font-weight: 600;
-            color: $gray-300;
-            font-family: $font-poppins;
+            font-family: $font-open-sans;
+            text-transform: capitalize;
         }
     }
 

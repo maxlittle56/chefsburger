@@ -64,6 +64,8 @@
                 .navbar-nav {
                     align-items: center;
                     text-align: center;
+                    max-width: 16.875rem;
+                    margin: 0 auto;
                 }
                 .header-right {
                     flex-direction: column;
@@ -127,33 +129,57 @@
                 outline: none;
             }
         }
+
         .dropdown {
             &:hover {
-                .dropdown-menu {
-                    @include media-breakpoint-up(lg) {
+                .caret {
+                    color: $white;
+                }
+                @include media-breakpoint-up(lg) {
+                    .dropdown-menu {
                         display: block;
+                    }
+                    .caret {
+                        color: $primary;
                     }
                 }
             }
-            .dropdown {
-                &-menu {
-                    padding: 0;
-                    border: 0;
-                    border-radius: 0;
-                    min-width: 16.25rem;
+            & > a {
+                padding-right: 1.7rem;
+                @include media-breakpoint-up(lg) {
+                    padding-right: 1rem;
                 }
-                &-item {
-                    color: $gray-600;
-                    background-color: $gray-800;
-                    padding: 15px;
-                    border-bottom: 2px solid $gray-900;
-                    @include font-size(0.6875rem);
-                    font-weight: 700;
-                    text-transform: capitalize;
-                    &:hover {
-                        background-color: $black-500;
-                        color: $light-gray-200;
-                    }
+            }
+            &-menu {
+                padding: 0;
+                border: 0;
+                border-radius: 0;
+                min-width: 16.25rem;
+            }
+            &-item {
+                color: $gray-600;
+                background-color: $gray-800;
+                padding: 15px;
+                border-bottom: 2px solid $gray-900;
+                @include font-size(0.6875rem);
+                font-weight: 700;
+                text-transform: capitalize;
+                &:hover {
+                    background-color: $black-500;
+                    color: $light-gray-200;
+                }
+            }
+            .caret {
+                @include font-size(0.65rem);
+                position: absolute;
+                top: 0.875rem;
+                right: 0.3125rem;
+                color: rgba($white, 0.5);
+                cursor: pointer;
+                @include media-breakpoint-up(lg) {
+                    top: 0.625rem;
+                    color: $white;
+                    @include font-size(0.5rem);
                 }
             }
         }

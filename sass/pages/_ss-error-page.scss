@@ -6,7 +6,6 @@
         .block-title {
             @include media-breakpoint-down(md) {
                 text-align: center;
-                padding-top: 3.125rem;
             }
             span {
                 font-family: $font-poppins;
@@ -47,6 +46,14 @@
             &:hover {
                 color: $gray-900;
             }
+        }
+    }
+    &-img{
+        @include media-breakpoint-down(md){
+            margin-bottom: 3.125rem;
+        }
+        @include media-breakpoint-down(xs){
+            margin-bottom: 1.875rem;
         }
     }
 }

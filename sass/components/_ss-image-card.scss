@@ -32,6 +32,7 @@
             color: $white;
             text-transform: uppercase;
             font-weight: 600;
+            @include font-size(1.125rem);
         }
 
         h5 {
@@ -44,7 +45,9 @@
     .price {
         h5 {
             font-family: $font-poppins;
-            color: $yellow;
+            color: $light-yellow;
+            @include font-size(0.875rem);
+            font-weight: 500;
         }
     }
     h3 {

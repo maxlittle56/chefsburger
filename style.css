@@ -12742,15 +12742,39 @@ iframe {
 
 .block-title span {
   display: block;
-  font-size: 3.5rem;
   color: #999966;
   line-height: 1.2;
   font-family: cursive;
   font-weight: 500;
   text-transform: none;
+  font-size: 2.25rem;
 }
 
 @media (max-width: 1200px) {
+  .block-title span {
+    font-size: calc(1.35rem + 1.2vw) ;
+  }
+}
+
+@media (min-width: 768px) {
+  .block-title span {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .block-title span {
+    font-size: calc(1.4rem + 1.8vw) ;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block-title span {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
   .block-title span {
     font-size: calc(1.475rem + 2.7vw) ;
   }
@@ -12760,7 +12784,18 @@ iframe {
   text-transform: uppercase;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  margin-top: 0.3125rem;
+}
+
+@media (max-width: 575.98px) {
+  .block-title h2 {
+    font-size: 1.5625rem;
+  }
+}
+
+@media (max-width: 575.98px) and (max-width: 1200px) {
+  .block-title h2 {
+    font-size: calc(1.28125rem + 0.375vw) ;
+  }
 }
 
 .slick-arrow {
@@ -12976,6 +13011,7 @@ iframe {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 1.125rem;
 }
 
 .image-card .text-wrap h5 {
@@ -12986,7 +13022,9 @@ iframe {
 
 .image-card .price h5 {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
-  color: #cc9933;
+  color: #ffcc66;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .image-card h3 {
@@ -13421,15 +13459,32 @@ iframe {
 .text-block {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
-  line-height: 2;
   color: #333333;
 }
 
+@media (min-width: 1430px) {
+  .text-block {
+    line-height: 2;
+  }
+}
+
 .text-block h4 {
-  font-size: 1.125rem;
-  line-height: 1.67;
+  font-size: 1rem;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
   margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+  .text-block h4 {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-block h4 {
+    line-height: 1.67;
+  }
 }
 
 .double-column {
@@ -14430,7 +14485,6 @@ iframe {
 @media (max-width: 991.98px) {
   .error-page .block-title {
     text-align: center;
-    padding-top: 3.125rem;
   }
 }
 
@@ -14487,6 +14541,18 @@ iframe {
 
 .error-content a:hover {
   color: #333333;
+}
+
+@media (max-width: 991.98px) {
+  .error-img {
+    margin-bottom: 3.125rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .error-img {
+    margin-bottom: 1.875rem;
+  }
 }
 
 .cart-pg .table-responsive {
@@ -14652,6 +14718,8 @@ iframe {
   padding: 0.3125rem;
   height: 3.4375rem;
   text-align: center;
+  float: right;
+  margin-right: 0;
 }
 
 .cart-pg .cart-table .update-cart {
@@ -14660,6 +14728,12 @@ iframe {
 
 .cart-pg .cart-table .update-cart .btn {
   letter-spacing: 0;
+}
+
+@media (min-width: 1200px) {
+  .cart-pg .cart-table .update-cart .btn {
+    min-width: 195px;
+  }
 }
 
 .cart-pg .cart-table .update-cart .btn[disabled]:hover {
@@ -14775,6 +14849,7 @@ iframe {
   font-weight: 600;
   width: 35%;
   padding: 0.625rem;
+  font-size: 0.875rem;
 }
 
 .cart-pg .cart-totals table {
@@ -14789,6 +14864,7 @@ iframe {
   vertical-align: top;
   border-left: 0;
   border-right: 0;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -14823,6 +14899,7 @@ iframe {
   .cart-pg .cart-totals .proceed-to-checkout .btn {
     font-size: 1.125rem;
     padding: 1.125rem;
+    min-width: 20.375rem;
   }
 }
 

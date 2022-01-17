@@ -12601,8 +12601,14 @@ iframe {
 
 .banner-caption {
   position: absolute;
-  top: 36%;
-  left: 62%;
+  top: 35%;
+  left: 60%;
+}
+
+@media (min-width: 768px) {
+  .banner-caption {
+    left: 67%;
+  }
 }
 
 .banner-caption span {
@@ -12612,20 +12618,23 @@ iframe {
   letter-spacing: 3px;
   color: #fff;
   display: inline-block;
-  padding-left: 2.8125rem;
+  padding-left: 3.125rem;
   font-size: 0.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .banner-caption span {
-    padding-left: 3.75rem;
+    padding-left: 5rem;
     font-size: 0.625rem;
+    letter-spacing: 5px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1430px) {
   .banner-caption span {
     font-size: 0.75rem;
+    padding-left: 6.25rem;
+    letter-spacing: 7px;
   }
 }
 
@@ -12640,9 +12649,9 @@ iframe {
   width: 25px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .banner-caption span::before {
-    width: 30px;
+    width: 55px;
   }
 }
 
@@ -12985,7 +12994,13 @@ iframe {
 
 @media (min-width: 992px) {
   .image-card {
-    min-height: 826px;
+    min-height: 37.5rem;
+  }
+}
+
+@media (min-width: 1430px) {
+  .image-card {
+    min-height: 51.625rem;
   }
 }
 
@@ -13299,12 +13314,9 @@ iframe {
 
 .overlap-media img {
   width: 100%;
-}
-
-@media (max-width: 575.98px) {
-  .overlap-media img {
-    height: 100%;
-  }
+  height: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
 }
 
 .overlap-media__over {
@@ -13362,7 +13374,7 @@ iframe {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(10, 12, 16, 0.5);
+  background-color: rgba(10, 12, 16, 0.2);
   z-index: -1;
 }
 
@@ -13468,6 +13480,18 @@ iframe {
   }
 }
 
+@media (min-width: 768px) {
+  .text-block p {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-block p {
+    margin-bottom: 1.5625rem;
+  }
+}
+
 .text-block h4 {
   font-size: 1rem;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -13541,6 +13565,7 @@ iframe {
   justify-content: center;
   align-items: center;
   min-height: 180px;
+  margin: 3px 3px 0 0;
 }
 
 .page-nav a {
@@ -14417,7 +14442,7 @@ iframe {
 
 @media (min-width: 992px) {
   .testimonial-slider .slick-arrow {
-    top: 0.9375rem;
+    top: 1.9375rem;
   }
 }
 
@@ -15023,7 +15048,12 @@ iframe {
 
 .footer-social {
   text-align: center;
-  max-width: 288px;
+}
+
+@media (min-width: 1200px) {
+  .footer-social {
+    max-width: 288px;
+  }
 }
 
 .footer-social h6 {

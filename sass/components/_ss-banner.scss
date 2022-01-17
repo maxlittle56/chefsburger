@@ -84,8 +84,12 @@
     }
     &-caption {
         position: absolute;
-        top: 36%;
-        left: 62%;
+        top: 35%;
+        left: 60%;
+
+        @include media-breakpoint-up(md) {
+            left: 67%;
+        }
         span {
             position: relative;
             text-transform: uppercase;
@@ -93,14 +97,17 @@
             letter-spacing: 3px;
             color: $white;
             display: inline-block;
-            padding-left: 2.8125rem;
+            padding-left: 3.125rem;
             @include font-size(0.5rem);
-            @include media-breakpoint-up(md) {
-                padding-left: 3.75rem;
+            @include media-breakpoint-up(lg) {
+                padding-left: 5rem;
                 @include font-size(0.625rem);
+                letter-spacing: 5px;
             }
-            @include media-breakpoint-up(xl) {
+            @include media-breakpoint-up(xxl) {
                 @include font-size(0.75rem);
+                padding-left: 6.25rem;
+                letter-spacing: 7px;
             }
             &::before {
                 content: "";
@@ -111,8 +118,8 @@
                 transform: translateY(-50%);
                 background-color: $white;
                 width: 25px;
-                @include media-breakpoint-up(md) {
-                    width: 30px;
+                @include media-breakpoint-up(lg) {
+                    width: 55px;
                 }
             }
         }

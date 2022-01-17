@@ -1,84 +1,3 @@
-// .overlap {
-//     &-block {
-//         position: relative;
-//         margin-bottom: 52%;
-
-//         @include media-breakpoint-up(md) {
-//             margin-bottom: 10rem;
-//         }
-
-//         @include media-breakpoint-up(lg) {
-//             margin-bottom: 16rem;
-//         }
-
-//         @include media-breakpoint-up(xl) {
-//             margin-bottom: 20rem;
-//         }
-//     }
-
-//     &-img {
-//         width: 100%;
-//         &--right {
-//             position: absolute;
-//             top: calc(100% - 100px);
-//             right: -135px;
-//         }
-//     }
-// }
-
-// .overlap {
-//     &-block {
-//         position: relative;
-//         z-index: 0;
-//         &--horizontal {
-//             padding-bottom: 5rem;
-//             padding-right: 3rem;
-//             @include media-breakpoint-up(lg) {
-//                 padding-bottom: 10rem;
-//                 padding-right: 5rem;
-//             }
-//             @include media-breakpoint-up(xxl) {
-//                 padding-bottom: 18rem;
-//                 padding-right: 9rem;
-//             }
-//             .overlap-img {
-//                 &--right {
-//                     position: absolute;
-//                     bottom: 0;
-//                     right: 0;
-//                     left: 15%;
-//                 }
-//             }
-//         }
-//         &--vertical {
-//             padding-top: 1.875rem;
-//             @include media-breakpoint-up(md) {
-//                 padding-top: 3.125rem;
-//             }
-//             @include media-breakpoint-up(xl) {
-//                 padding-top: 5rem;
-//             }
-//             .overlap-img {
-//                 &--right {
-//                     position: absolute;
-//                     top: 0;
-//                     left: 0;
-//                     z-index: -1;
-//                     padding-left: 3.125rem;
-//                     @include media-breakpoint-up(sm) {
-//                         padding-left: 5rem;
-//                     }
-//                     @include media-breakpoint-up(lg) {
-//                         padding-left: 9.375rem;
-//                     }
-//                     @include media-breakpoint-up(xxl) {
-//                         padding-left: 15.625rem;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 
 .overlap-media {
     position: relative;
@@ -108,9 +27,9 @@
     }
     img {
         width: 100%;
-        @include media-breakpoint-down(xs) {
-            height: 100%;
-        }
+        height: 100%;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
     }
     &__over {
         position: absolute;

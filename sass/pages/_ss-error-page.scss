@@ -13,7 +13,7 @@
                 font-weight: 600;
                 text-transform: uppercase;
                 @include media-breakpoint-up(sm) {
-                    letter-spacing: 1px;
+                    letter-spacing: 2px;
                 }
                 @include media-breakpoint-up(lg) {
                     letter-spacing: 3px;

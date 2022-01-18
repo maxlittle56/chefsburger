@@ -4,14 +4,21 @@
     left: 0;
     right: 0;
     z-index: 99;
+    padding: 3rem 0 0;
+    transition: all .3s;
+    &--alt {
+        position: static;
+        padding: 3rem 0;
+        background-color: $black-300;
+        transition: none;
+    }
 
     &.sticky {
+        position: fixed;
+        padding: 0.75rem 0;
         background-color: $black;
         box-shadow: 0 1.25rem 1.875rem rgba($white, 0.1);
 
-        .navbar {
-            padding: 0.75rem 0;
-        }
         .header-right {
             .cart {
                 @include media-breakpoint-down(md) {
@@ -43,6 +50,9 @@
                 top: 40px;
                 transform: translateX(-100%);
                 left: calc(100% - 80px);
+            }
+            @include media-breakpoint-down(xs) {
+                left: calc(100% - 55px);
             }
 
             &:hover {
@@ -153,6 +163,10 @@
                     transition: all 0.2s ease-out;
                     opacity: 0;
                     visibility: hidden;
+                }
+                @include media-breakpoint-down(xs){
+                    width: 240px;
+                    padding: 25px 15px;
                 }
 
                 &__btn {

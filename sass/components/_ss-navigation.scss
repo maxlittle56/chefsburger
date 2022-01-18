@@ -1,6 +1,6 @@
 .site-header {
     .navbar {
-        padding: 3rem 0 0;
+        padding: 0;
         transition: all 0.3s;
 
         &-nav {
@@ -172,12 +172,15 @@
             .caret {
                 @include font-size(0.65rem);
                 position: absolute;
-                top: 0.875rem;
-                right: 0.3125rem;
+                top: 0.4375rem;
+                right: 0;
+                padding: 0.5rem;
                 color: rgba($white, 0.5);
                 cursor: pointer;
                 @include media-breakpoint-up(lg) {
                     top: 0.625rem;
+                    right: 0.3125rem;
+                    padding: 0;
                     color: $white;
                     @include font-size(0.5rem);
                 }

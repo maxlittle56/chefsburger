@@ -92,8 +92,8 @@
                                             <div class="cart-list__img">
                                                 <picture>
                                                     <source srcset="assets/images/mini-cart-img.webp" type="image/webp" />
-                                                    <source srcset="assets/images/mini-cart-img.png" type="image/png" />
-                                                    <img loading="lazy" width="185" height="18" src="assets/images/mini-cart-img.png" alt="mini cart image" />
+                                                    <source srcset="assets/images/mini-cart-img.jpg" type="image/jpg" />
+                                                    <img loading="lazy" width="185" height="18" src="assets/images/mini-cart-img.jpg" alt="mini cart image" />
                                                 </picture>
                                             </div><!-- /.cart-list__img -->
                                         </div><!-- /.item-wrap-->
@@ -104,7 +104,7 @@
                                     <span class="cart-total__price">$35</span>
                                 </div>
                                 <div class="cart-panel__btn">
-                                    <a href="#" class="btn btn-tertiary">View cart</a>
+                                    <a href="cart.html" class="btn btn-tertiary">View cart</a>
                                     <a href="#" class="btn btn-primary">Checkout</a>
                                 </div>
                             </div>
@@ -134,9 +134,10 @@
             </div><!-- /.inner-banner__content-->
         </div><!-- /.container -->
     </section><!-- /.inner-banner -->
-    <section class="menu-list py-xxl-7 py-xl-5 py-md-3 py-2">
+    <section class="menu-list pt-xxl-7 pb-xxl-5 py-xl-5 py-md-3 py-2">
+        <h2 class="hidden">Menu</h2>
         <div class="container">
-            <div class="row mb-1 mb-lg-2 mb-xl-3">
+            <section class="row mb-1 mb-lg-2 mb-xl-3">
                 <div class="col-lg-6">
                     <div class="image-card bg-cover mb-2 mb-lg-0">
                         <img src="assets/images/menu-list-img-1.jpg" width="590" height="731" loading="lazy" alt="Asparagus">
@@ -351,8 +352,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="row flex-row-reverse mb-1 mb-lg-2 mb-xl-3">
+            </section>
+            <section class="row flex-row-reverse mb-1 mb-lg-2 mb-xl-3">
                 <div class="col-lg-6">
                     <div class="image-card bg-cover mb-2 mb-lg-0">
                         <img src="assets/images/menu-list-img-2.jpg" width="590" height="731" loading="lazy" alt="Asparagus">
@@ -564,8 +565,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="row mb-1 mb-lg-2 mb-xl-3">
+            </section>
+            <section class="row mb-1 mb-lg-2 mb-xl-3">
                 <div class="col-lg-6">
                     <div class="image-card bg-cover mb-2 mb-lg-0">
                         <img src="assets/images/menu-list-img-1.jpg" width="590" height="731" loading="lazy" alt="Asparagus">
@@ -779,8 +780,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="row flex-row-reverse mb-1 mb-lg-2 mb-xl-3">
+            </section>
+            <section class="row flex-row-reverse">
                 <div class="col-lg-6">
                     <div class="image-card bg-cover mb-2 mb-lg-0">
                         <img src="assets/images/menu-list-img-2.jpg" width="590" height="731" loading="lazy" alt="Asparagus">
@@ -994,9 +995,76 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
+    <section class="subscribe-block text-center py-xxl-7 py-lg-5 py-sm-3 py-2">
+        <div class="container">
+            <div class="block-title">
+                <div class="discount">
+                    <h5>15% <br>OFF</h5>
+                </div>
+                <h2 class="text-white"><span>Subscribe to our</span>NEWSLETTER</h2>
+                <p>Subscribe to our newsletter and receive 15% discount from your order.</p>
+            </div><!-- /.block-title -->
+            <form action="#">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" placeholder="YOUR@MAIL.COM" class="form-control" id="email">
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div><!-- /.container-->
+    </section><!-- /.subscribe-block -->
+    <footer id="footer" class="site-footer">
+        <div class="container">
+            <div class="footer-main row">
+                <div class="col-lg-3">
+                    <div class="footer-info">
+                        <p>Chef Taylor Bonnyman, working in collaboration with Head Chef Marguerite Keogh, offer elegant & playful modern British cooking.</p>
+                    </div><!-- /.footer-info -->
+                </div>
+                <div class="col-lg-2">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Reservation</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav><!-- /footer-nav -->
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-social">
+                        <a href="#" class="btn btn-primary btn-primary--alt">Online Reservation</a>
+                        <div class="social-icon">
+                            <h6 >Follow</h6>
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-bell"></i></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- /.footer-social -->
+                </div>
+                <div class="col-lg-3 footer-address">
+                    <address>
+                        <a class="phone" href="tel:418005551234">+4 1800 555 1234</a>
+                        <a class="mail" href="mailto:booktable@restaurant.com">booktable@restaurant.com</a>
+                        <a class="location" href="#" target="_blank">49 FEATHERSTONE STREET <br> LONDON <br> EC1Y 8SY <br> UNITED KINGDOM</a>
+                    </address>
+                </div><!-- /.footer-address -->
+            </div><!-- .footer-main -->
+            <div class="footer-bottom">
+                <p>This Demo is also part of <a href="https://kallyas.net/">Kallyas WordPress Theme</a>. All rights reserved.</p>
+                <p>copyright © 2016 Kallyas.net | <a href="#">Hogash.com</a></p>
+            </div><!-- /.footer-bottom -->
+        </div><!-- /.container -->
+    </footer>
+    <!-- / .site-footer -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="vendors/slick/slick.min.js"></script>

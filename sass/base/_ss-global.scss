@@ -71,3 +71,8 @@ iframe {
 	height: 100%;
 	vertical-align: top;
 }
+.hidden{
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+}
